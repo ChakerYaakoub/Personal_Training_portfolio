@@ -225,6 +225,8 @@ body::-webkit-scrollbar-thumb {
   font-family: var(--ff-poppins);
   font-weight: var(--fw-500);
   margin-block-end: 6px;
+
+  padding-top: 1rem;
 }
 
 .h1,
