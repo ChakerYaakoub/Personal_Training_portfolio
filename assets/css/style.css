@@ -582,17 +582,59 @@ body::-webkit-scrollbar-thumb {
   #PRICEING
 \*-----------------------------------*/
 
-.pricing {
-  background-color: var(--cultured);
+/* pricing-content */
+/* chaker  end */
+
+/* Style paragraphs */
+
+.pricing-content p {
+  /* Add padding at the beginning of each paragraph */
+  text-indent: 20px;
 }
 
-.pricing .section-text {
+/* Style unordered list items */
+.pricing-content ul li {
+  list-style: decimal !important; /* Use decimal numbers for list items */
+  padding-left: 20px; /* Add padding for indentation */
+
+  height: 2rem;
+}
+.pricing-content ul li:hover {
+  color: var(--theme-color);
+  font-weight: 800;
+  cursor: pointer;
+  font-size: large;
+}
+
+/* Style nested unordered list items */
+.pricing-content ul ul li {
+  list-style: circle !important; /* Use circle bullets for nested list items */
+  padding-left: 20px; /* Add padding for indentation */
+}
+
+/* Style list items */
+.pricing-content li {
+  margin-bottom: 5px; /* Add space between list items */
+}
+/**
+ * responsive for larger than 768px screen
+ */
+
+/* .pricing ul {
   margin-block-end: 60px;
+} */
+
+/* chaker  end */
+
+.pricing {
+  background-color: var(--cultured);
 }
 
 .pricing-list {
   display: grid;
   gap: 30px;
+
+  padding-top: 6rem;
 }
 
 .pricing-card {
@@ -605,6 +647,7 @@ body::-webkit-scrollbar-thumb {
   line-height: 1.2;
   padding: 30px;
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .pricing-card ion-icon {
@@ -832,10 +875,6 @@ textarea.input-field {
 #about-us li {
   margin-bottom: 5px; /* Add space between list items */
 }
-
-/**
- * responsive for larger than 768px screen
- */
 
 @media (min-width: 768px) {
   /**
@@ -1066,6 +1105,22 @@ textarea.input-field {
     gap: 150px;
   }
 
+  /* .skills-banner {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 410px;
+    height: 620px;
+    background-image: url("../images/bilal24.png");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 105%;
+    background-attachment: fixed;
+    overflow: hidden;
+  } */
+
   .skills-banner {
     display: block;
     position: absolute;
@@ -1073,11 +1128,11 @@ textarea.input-field {
     right: 50px;
     width: 410px;
     height: 620px;
-    background-image: url("../images/bilal2.jpg");
+    background-image: url("../images/rere.png");
 
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 105%;
+    background-position: 85%;
     background-attachment: fixed;
     overflow: hidden;
   }
