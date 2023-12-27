@@ -67,7 +67,8 @@
             </li>
 
             <li>
-              <a href="#price" class="navbar-link" data-nav-link>Price</a>
+              <a href="#Solutions" class="navbar-link"
+                data-nav-link>Solutions</a>
             </li>
 
             <!-- <li>
@@ -200,12 +201,13 @@
 
                   <figure class="card-banner img-holder"
                     style="--width: 600; --height: 675;">
-                    <img src="./assets/images/planNutrition.png" width="600"
+                    <!-- <img src="./assets/images/planNutrition.png" width="600"  -->
+                    <img src="./assets/images/NUTRITION PLAN2.png" width="600"
                       height="675" loading="lazy" alt="Magic Art"
                       class="img-cover saturate">
                   </figure>
 
-                  <div href="#" class="card-content">
+                  <div class="card-content">
 
                     <ion-icon name="arrow-forward-outline"
                       aria-hidden="true"></ion-icon>
@@ -233,7 +235,8 @@
                       class="img-cover saturate">
                   </figure>
 
-                  <a href="#" class="card-content">
+                  <!-- <a href="#" class="card-content"> -->
+                  <div class="card-content">
 
                     <ion-icon name="arrow-forward-outline"
                       aria-hidden="true"></ion-icon>
@@ -244,7 +247,7 @@
                       goals. Emphasis on effective exercises, calorie burning,
                       and sustainable routines for optimal results.</p>
 
-                  </a>
+                  </div>
 
                 </div>
               </li>
@@ -258,7 +261,7 @@
                       class="img-cover saturate">
                   </figure>
 
-                  <a href="#" class="card-content">
+                  <div class="card-content">
 
                     <ion-icon name="arrow-forward-outline"
                       aria-hidden="true"></ion-icon>
@@ -269,7 +272,7 @@
                       fitness. Emphasis on personalized choices, quality, and
                       supporting individual health and performance goals.</p>
 
-                  </a>
+                  </div>
 
                 </div>
               </li>
@@ -312,7 +315,7 @@
                       class="img-cover saturate">
                   </figure>
 
-                  <div href="#" class="card-content">
+                  <div class="card-content">
 
                     <ion-icon name="arrow-forward-outline"
                       aria-hidden="true"></ion-icon>
@@ -537,78 +540,51 @@
         - #PRICING
       -->
 
-        <section class="section pricing" id="price" aria-label="price">
+        <section class="section pricing" id="Solutions" aria-label="Solutions">
           <div class="container">
-
             <div class="pricing-content">
-
-              <p class="section-subtitle">Pricing</p>
-
-              <h2 class="h2 section-title">Service Prices</h2>
-
+              <p class="section-subtitle">Tailored Packages</p>
+              <h2 class="h2 section-title">Personalized Solutions</h2>
               <p class="section-text">
-                For more than 20 years our experts have been accomplishing
-                enough with modern Web Development, new
-                generation web and
-                app programming language.
+                With more than 9 years of experience in personal training, our
+                adept coaches specialize in curating customized packages to
+                match your fitness aspirations. Explore our comprehensive
+                bundles meticulously designed to align with your fitness
+                objectives:
               </p>
-
+              <br>
+              <ul id="packages">
+                <li data-package="Nutrition Plan">Nutrition Plan</li>
+                <li data-package="Program Design">Program Design</li>
+                <li data-package="Supplement Recommendations">Supplement
+                  Recommendations</li>
+                <li data-package="Combined All-in-One Package">Combined
+                  All-in-One Package</li>
+              </ul>
             </div>
-
-            <ul class="pricing-list">
-
-              <li>
-                <div class="pricing-card">
-                  <ion-icon name="logo-wordpress" aria-hidden="true"></ion-icon>
-
-                  <h3 class="card-title">WordPress Development</h3>
-
-                  <data class="card-price" value="500">$500</data>
+            <ul id="session" class="pricing-list">
+              <li data-package="1 PT Session">
+                <div class="pricing-card" data-package="1 PT Session">
+                  <ion-icon name="barbell-outline"
+                    aria-hidden="true"></ion-icon>
+                  <h3 class="card-title">1 PT Session</h3>
                 </div>
               </li>
-
-              <li>
-                <div class="pricing-card">
-                  <ion-icon name="logo-html5" aria-hidden="true"></ion-icon>
-
-                  <h3 class="card-title">HTML Development</h3>
-
-                  <data class="card-price" value="400">$400</data>
+              <li data-package="8 PT Sessions + 1 Free Session">
+                <div class="pricing-card"
+                  data-package="8 PT Sessions + 1 Free Session">
+                  <ion-icon name='barbell'></ion-icon>
+                  <h3 class="card-title">8 PT Sessions + 1 Free Session</h3>
                 </div>
               </li>
-
-              <li>
-                <div class="pricing-card">
-                  <ion-icon name="reader" aria-hidden="true"></ion-icon>
-
-                  <h3 class="card-title">Content Writing</h3>
-
-                  <data class="card-price" value="300">$300</data>
+              <li data-package="12 PT Sessions + 2 Free Sessions">
+                <div class="pricing-card"
+                  data-package="12 PT Sessions + 2 Free Sessions">
+                  <ion-icon name='barbell-sharp'></ion-icon>
+                  <h3 class="card-title">12 PT Sessions + 2 Free Sessions</h3>
                 </div>
               </li>
-
-              <!-- <li>
-                <div class="pricing-card">
-                  <ion-icon name="qr-code" aria-hidden="true"></ion-icon>
-
-                  <h3 class="card-title">Brand Identity</h3>
-
-                  <data class="card-price" value="200">$200</data>
-                </div>
-              </li>
-
-              <li>
-                <div class="pricing-card">
-                  <ion-icon name="image" aria-hidden="true"></ion-icon>
-
-                  <h3 class="card-title">PSD Design</h3>
-
-                  <data class="card-price" value="100">$100</data>
-                </div>
-              </li> -->
-
             </ul>
-
           </div>
         </section>
 
@@ -759,6 +735,8 @@
               </p> -->
 
               <ul class="contact-list">
+                <!-- <a href="https://wa.me/+96170178399?text=Hello%20there!">Message
+                  us on WhatsApp</a> -->
 
                 <li class="contact-item">
                   <ion-icon name="location-outline"
@@ -771,9 +749,11 @@
 
                 <li class="contact-item">
                   <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
-
-                  <a href="https://wa.me/+96170178399" class="contact-link"
-                    target="_blank">Chat on WhatsApp</a>
+                  <a
+                    href="https://wa.me/+96170178399?text=Hello,%20I'm%20interested%20in%20your%20services.%20Can%20you%20provide%20more%20details%3F"
+                    class="contact-link" target="_blank">
+                    Chat on WhatsApp
+                  </a>
                 </li>
 
                 <li class="contact-item">
@@ -871,7 +851,9 @@
           </li>
 
           <li>
-            <a href="https://wa.me/+96170178399" class="social-link"
+            <a
+              href="https://wa.me/+96170178399?text=Hello,%20I'm%20interested%20in%20your%20services.%20Can%20you%20provide%20more%20details%3F"
+              class="social-link"
               target="_blank">
               <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
