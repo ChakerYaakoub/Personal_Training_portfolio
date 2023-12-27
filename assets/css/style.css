@@ -589,7 +589,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Style paragraphs */
 
-.pricing-content p {
+.pricing-content .section-text {
   /* Add padding at the beginning of each paragraph */
   text-indent: 20px;
 }
