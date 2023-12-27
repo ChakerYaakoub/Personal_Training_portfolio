@@ -590,16 +590,24 @@ body::-webkit-scrollbar-thumb {
 /* Style paragraphs */
 
 .pricing-content .section-text {
-  /* Add padding at the beginning of each paragraph */
   text-indent: 20px;
 }
 
+.pricing-content ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  color: var(--black);
+  font-size: var(--fs-17);
+  padding-block: 6px;
+}
 /* Style unordered list items */
 .pricing-content ul li {
   list-style: decimal !important; /* Use decimal numbers for list items */
   padding-left: 20px; /* Add padding for indentation */
 
-  height: 2rem;
+  /* height: 2rem; */
 }
 .pricing-content ul li:hover {
   color: var(--theme-color);
@@ -618,6 +626,7 @@ body::-webkit-scrollbar-thumb {
 .pricing-content li {
   margin-bottom: 5px; /* Add space between list items */
 }
+
 /**
  * responsive for larger than 768px screen
  */
@@ -625,6 +634,65 @@ body::-webkit-scrollbar-thumb {
 /* .pricing ul {
   margin-block-end: 60px;
 } */
+
+.cssbuttons-io-button {
+  background: var(--theme-color);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+
+  /* font: initial !important; */
+
+  font-size: 0.8em;
+
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  /* width: 90%; */
+  box-shadow: inset 0 0 1.6em -0.6em var(--theme-color);
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: var(--theme-color);
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
 
 /* chaker  end */
 
@@ -678,6 +746,8 @@ body::-webkit-scrollbar-thumb {
   --color: var(--white);
   --icon-color: var(--white);
 }
+
+/* // button  */
 
 /*-----------------------------------*\
   #NEWS
@@ -809,6 +879,9 @@ textarea.input-field {
  */
 
 @media (min-width: 576px) {
+  .cssbuttons-io-button {
+    font-size: 1em;
+  }
   /**
    * REUSED STYLE
    */

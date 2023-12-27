@@ -62,12 +62,13 @@ function sendWhatsAppMessage(packageName) {
 
 // Add event listener to the packages list
 document.getElementById("packages").addEventListener("click", function (event) {
-  if (event.target.tagName === "LI") {
+  console.log("here");
+  console.log(event.target);
+  if (event.target.dataset.package) {
     let packageName = event.target.dataset.package;
     sendWhatsAppMessage(packageName);
   }
 });
-
 // Add event listener to the session list
 document.getElementById("session").addEventListener("click", function (event) {
   if (event.target.dataset.package) {
