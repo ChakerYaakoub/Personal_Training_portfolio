@@ -677,7 +677,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cssbuttons-io-button:hover .icon {
-  width: calc(100% - 0.6em);
+  width: calc(50% - 0.6em);
 }
 
 .cssbuttons-io-button .icon svg {

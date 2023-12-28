@@ -556,10 +556,13 @@
 
               <ul id="packages">
 
-                <li data-package="Nutrition Plan">
-                  <button class="cssbuttons-io-button">
-                    Nutrition Plan
-                    <div class="icon" data-package="Nutrition Plan">
+                <li>
+                  <button class="cssbuttons-io-button"
+                    onclick="sendWhatsAppMessage('Nutrition Plan')">
+
+                    <div> Nutrition Plan</div>
+
+                    <div class="icon">
                       <svg
                         height="24"
                         width="24"
@@ -574,11 +577,14 @@
                   </button>
                 </li>
 
-                <li data-package="Program Design">
+                <li>
                   <button class="cssbuttons-io-button"
-                    data-package="Nutrition Plan">
-                    Program Design
-                    <div class="icon" data-package=" Program Design">
+                    onclick="sendWhatsAppMessage('Program Design')">
+                    <div>
+                      Program Design
+                    </div>
+
+                    <div class="icon">
                       <svg
                         height="24"
                         width="24"
@@ -593,12 +599,15 @@
                   </button>
                 </li>
 
-                <li data-package="Supplement Recommendations">
+                <li>
                   <button class="cssbuttons-io-button"
-                    data-package="Nutrition Plan">
-                    Supplement
-                    Recommendations
-                    <div class="icon" data-package="Supplement Recommendations">
+                    onclick="sendWhatsAppMessage('Supplement Recommendations')">
+                    <div>
+                      Supplement
+                      Recommendations
+                    </div>
+
+                    <div class="icon">
                       <svg
                         height="24"
                         width="24"
@@ -613,14 +622,16 @@
                   </button>
                 </li>
 
-                <li data-package="Combined
-                All-in-One Package">
+                <li>
                   <button class="cssbuttons-io-button"
-                    data-package="Nutrition Plan">
-                    Combined
-                    All-in-One Package
-                    <div class="icon"
-                      data-package="Combined All-in-One Package">
+                    onclick="sendWhatsAppMessage('Combined All-in-One Package')">
+                    <div>
+                      Combined
+                      All-in-One Package
+
+                    </div>
+
+                    <div class="icon">
                       <svg
                         height="24"
                         width="24"
@@ -639,22 +650,23 @@
             </div>
             <ul id="session" class="pricing-list">
               <li data-package="1 PT Session">
-                <div class="pricing-card" data-package="1 PT Session">
+                <div class="pricing-card"
+                  onclick="sendWhatsAppMessage('1 PT Session')">
                   <ion-icon name="barbell-outline"
                     aria-hidden="true"></ion-icon>
                   <h3 class="card-title">1 PT Session</h3>
                 </div>
               </li>
-              <li data-package="8 PT Sessions + 1 Free Session">
+              <li>
                 <div class="pricing-card"
-                  data-package="8 PT Sessions + 1 Free Session">
+                  onclick="sendWhatsAppMessage('8 PT Sessions + 1 Free Session')">
                   <ion-icon name='barbell'></ion-icon>
                   <h3 class="card-title">8 PT Sessions + 1 Free Session</h3>
                 </div>
               </li>
               <li data-package="12 PT Sessions + 2 Free Sessions">
                 <div class="pricing-card"
-                  data-package="12 PT Sessions + 2 Free Sessions">
+                  onclick="sendWhatsAppMessage('12 PT Sessions + 2 Free Sessions')">
                   <ion-icon name='barbell-sharp'></ion-icon>
                   <h3 class="card-title">12 PT Sessions + 2 Free Sessions</h3>
                 </div>
