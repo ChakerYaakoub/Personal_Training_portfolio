@@ -51,28 +51,32 @@ window.addEventListener("scroll", function () {
 });
 
 // Function to handle sending a WhatsApp message
-function sendWhatsAppMessage(packageName) {
+const sendWhatsAppMessage = (packageName) => {
   let phoneNumber = "+96170178399";
   let message = `Hello, I'm interested in the *${packageName}* package. Can you provide more details?`;
   let whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
     message
   )}`;
   window.open(whatsappURL);
-}
+};
 
-// Add event listener to the packages list
-document.getElementById("packages").addEventListener("click", function (event) {
-  console.log("here");
-  console.log(event.target);
-  if (event.target.dataset.package) {
-    let packageName = event.target.dataset.package;
-    sendWhatsAppMessage(packageName);
-  }
-});
-// Add event listener to the session list
-document.getElementById("session").addEventListener("click", function (event) {
-  if (event.target.dataset.package) {
-    let packageName = event.target.dataset.package;
-    sendWhatsAppMessage(packageName);
-  }
-});
+// const handleWhatsApp = (text) => {
+//   sendWhatsAppMessage(text);
+// };
+
+// // Add event listener to the packages list
+// document.getElementById("packages").addEventListener("click", function (event) {
+//   console.log(event.target.dataset);
+//   if (event.target.dataset.package) {
+//     let packageName = event.target.dataset.package;
+//     sendWhatsAppMessage(packageName);
+//   }
+// });
+
+// // Add event listener to the session list
+// document.addEventListener("click", function (event) {
+//   if (event.target.dataset.package) {
+//     let packageName = event.target.dataset.package;
+//     sendWhatsAppMessage(packageName);
+//   }
+// });
